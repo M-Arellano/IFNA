@@ -1,0 +1,772 @@
+/*********************************
+    Table of Contents
+
+1. Global Styles
+2. Mobile styles
+3. Mobile Nav
+4. Media Screen 680
+5. Media Screen 980
+
+**********************************/
+
+
+
+/*********************************
+          Global Styles
+*********************************/
+
+/*****  Clear Fix ********
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+**************************/
+.spacer {
+    display: block;
+    width: 100%;
+    height: 4rem;
+}
+.spacer::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: black;
+    background-color: black;
+    
+}
+
+header {
+    margin: 0 auto;      
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: darkblue;   
+}
+
+
+/******************************
+          Header
+******************************/
+
+
+.container {
+    width: 100%;
+    margin-left: 0rem;
+    margin: 0 auto;
+    display: inline-block;
+}
+.logo img {
+    height: 75px;
+    margin-top: .5rem;
+    padding: 0 1rem;
+    text-align: left;
+    float: left;
+    
+}
+
+.moto {
+    font-size: 1rem;
+	font-family: 'Caveat', cursive;
+    color: rgb(13, 4, 133);
+    text-align: justify;
+	vertical-align: text-top;
+    padding-top: 0em;
+}
+
+
+
+
+
+/**************************
+    Main Content
+**************************/
+
+
+
+
+main {
+    margin: 1rem;
+    padding-bottom: 10rem;
+    
+}
+
+
+.missionheader {
+    text-align: center;
+}
+hr.divider {
+    max-width: 200px;
+    margin: 0px;
+    border: 2px solid darkblue;
+}
+
+article {
+    font-size: 1.3rem;
+    width: 60%;
+    padding: 0 3rem;
+    line-height: 2rem;
+    margin: 0 auto;
+    text-align: left;
+    
+}
+
+blockquote {
+    color:cornflowerblue;
+    font-family: 'Caveat', cursive;
+    font: 800;
+    font-size: 1.5rem;
+}
+
+.quicklinks,
+    .membership {
+        display: none;
+    }
+
+
+   .footer {
+       display: flex;
+   }
+    
+    footer {
+        position: absolute;
+        display: block;
+        height: 9rem;
+        bottom: -250;
+        text-align: center;
+        font-weight: 700;
+        width: 100%;
+        background-color: gray;
+        opacity: .6;
+    }
+    
+    footer P {
+        text-align: center;
+        padding-top: 1rem;
+    }
+    
+
+/***************************
+    Table Properties
+***************************/
+
+.goals {
+    width: 60%;
+    text-align: left;
+    margin: 5rem auto;
+}
+
+table.tg {
+    margin: 0 auto;
+}
+.tg  {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+.tg td {
+    border-color:black;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    font-size:14px;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+}
+.tg th {
+    border-color:black; 
+    border-style:solid;
+    border-width:1px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    font-weight:normal;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+}
+.tg .tg-0lax {
+    text-align:left;
+    vertical-align:top}
+
+.tg .tg-0pky {
+    border-color:;
+    vertical-align: top;
+    border-style: none;
+    border-width: 0px;
+    overflow:hidden;
+    padding:10px 5px;
+    }
+
+
+
+
+
+/******************************
+      Mobile Styles
+******************************/
+
+.mobile-navbar p {
+    font-size: .5rem;
+    text-align: center;
+    padding: 8px 10px 4px 10px;
+    margin: 0;
+    background-color: #5dbb5a;
+    color: rgb(13, 4, 133);
+    
+}
+
+.navbarcontainer {
+    display: none;
+}
+
+/*----------------------
+     Mobile Nav Menu vetical drop down
+-------------------------*/
+.mobile-navbar nav {
+    margin-left: .5rem;
+    margin-right: .3rem;
+    padding: 0;
+    max-width: 150px;
+    float: left;
+    display: inline-block;
+}
+ 
+.mobile-navbar nav a,
+ul {
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;   
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-navbar ul li {
+    font-size: .5rem;
+    list-style: none;
+    line-height: 20px;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /*background: rgb(97, 96, 100);*/
+    opacity: .8;
+}
+
+.mobile-navbar ul li a {
+    display: block;
+    text-decoration: none;
+}
+
+
+/* unvisited link */
+.mobile-navbar.menu a:link {
+    text-decoration: none;
+    color: black;
+}
+  
+  /* visited link */
+.mobile-navbar a:visited {
+    text-decoration: none;
+    color: black;
+    opacity: .8;
+}
+
+.mobile-navbar li a:hover {
+    background: #5dbb5a;
+    color: blanchedalmond;
+}
+
+.mobile-navbar ul li ul li {
+    display: none;
+}
+
+.mobile-navbar ul li:hover ul li {
+    display: block;*/
+}
+
+
+
+
+
+/****************************
+     Media Screen 680
+*****************************/
+
+
+
+@media screen and (min-width: 680px){
+
+    body {
+        font-weight: 500;
+        font-size: 70%;
+        color: black;
+    }
+    
+    .mobile-navbar nav {
+        display: none;
+    }
+
+    .mobile-navbar p {
+        display: none;
+    }
+
+    
+
+  
+    
+    .logo img {
+        height: 100px;
+        padding: 0 2rem;
+        /*margin-top: .5rem;
+        padding: 0 1rem;
+        text-align: left;
+        float: inline-start;*/
+        
+    }
+    
+    .moto {
+        font-size: 1.5rem;
+        text-align: left;
+        padding: 0 6rem;
+        margin-left: 15rem;
+        /*border: 1px dotted tomato;
+        font-family: 'Caveat', cursive;
+        color: rgb(13, 4, 133);
+        text-align: justify;
+        vertical-align: text-top;
+        padding-top: 0em;*/
+    }
+
+    .navbar p {
+        font-size: 1rem;
+        font-weight: 200;
+    }
+
+    /************
+    footer {
+        margin-top: -5rem;
+        font-size: small;
+        height: 5rem;
+    }*****/
+
+}
+
+/****************************
+     Media Screen 1070
+*****************************/
+
+
+@media screen and (min-width: 1070px){
+
+    body {
+        font-weight: 400;
+        font-size: 12pt;
+        margin-bottom: 0rem;
+        color: black;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    main {
+        margin-left: 15rem;
+        margin-bottom: 6rem;
+        width: 100%;
+        padding-bottom: 6rem; 
+    }
+
+    main {
+        display: inline;
+    }
+    footer {
+        position: absolute;
+        bottom: -70rem;
+        margin-top: 0rem;
+        padding-bottom: 2rem;
+        font-size: medium;
+        height: 7rem;
+    }
+        
+          
+    .mobile-navbar nav {
+        display: none;
+    }
+
+    .quicklinks,
+    .membership {
+        display: initial;
+    }
+    .quicklinks {
+        position: fixed;
+        top: 21rem;
+        left: 4rem;
+        
+    }
+    .quicklinks img {
+        border-radius: 10px;
+        box-shadow: 10px 10px 8px grey;
+        opacity: ;0.5;
+    }
+      
+    .container {
+        display: flex;
+        margin-bottom: .5rem;   
+    }
+
+    .container > * {
+        flex-basis: 100%;
+    }
+
+    .logo {
+        text-align: left;
+        margin-top: 1rem;
+        padding-top: 1rem;
+        padding-left: 3rem;
+    } 
+    
+    .logo img {
+        height: 7.5rem;
+        border-radius: 50%;
+        box-shadow: 10px 10px 5px grey;
+        /*float: right;
+        float: inline-end;*/
+        /*margin-top: .5rem;
+        padding: 0 1rem;
+        
+        float: inline-start;*/
+        
+    }
+    
+    .moto {
+        
+        text-align: center;
+        padding-left: 0rem;
+        margin-left: 0rem;
+        
+        /*font-family: 'Caveat', cursive;
+        color: rgb(13, 4, 133);
+        text-align: justify;
+        vertical-align: text-top;
+        padding-top: 0em;*/
+    }
+    .moto p {
+        font-size: 2rem;
+        font-weight: 500;
+        letter-spacing: 0.2rem;
+        text-shadow: -3px 3px #82e07f;
+       
+    }
+
+    .membership {
+        /*text-align: right;
+        vertical-align: bottom;*/
+        padding: 2rem 3rem 0 0;
+        margin: 0 auto;
+        /*border: 1px dotted tomato;*/
+    }
+
+    .membership img { 
+        height: 5rem;
+        margin-top: 1rem;
+        border-radius: 15px;
+        box-shadow: 5px 5px 10px gray;  darkblue;
+        
+    }
+
+  
+
+   
+    
+    #videoDiv {
+        position: relative;
+        z-index: -99;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        
+    }
+    #video1 {
+         margin: auto;
+         display: block;
+         width: 100%;
+         height: 110%;
+        }
+    
+    
+    .flextiles {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 5rem 9rem 1.5rem 22rem;
+        gap: 7rem;
+        }
+
+    .flextiles > * {
+        flex-basis: 100%;
+        margin: 0 auto;
+    }
+
+    .tile {
+        min-width: 15rem;
+        min-height: 10rem;
+        max-width: 15rem;
+        max-height: 10rem;
+        background-color: darkblue;
+        border-radius: 10px;
+        box-shadow: 10px 10px 8px rgb(18, 7, 54);
+        opacity: .6;
+    }
+
+    .tile {
+        font-family: caveat;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .tile img {
+        width: 15rem;
+    }
+
+    .tile:hover {
+        min-width: 17rem;
+        min-height: 12rem;
+        max-width: 17rem;
+        max-height: 12rem;
+        box-shadow: 20px 20px 8px rgb(18, 7, 54));
+    }
+
+    
+
+   
+    /*-------------------------
+    Horizontal Nav Bar 
+    ---------------------------*/
+    .navbarcontainer {
+        
+        height: ;30px;
+        margin-top: 1rem;
+        display: initial;    
+    }
+
+    .navbar {
+        float: right;
+        margin: 0 1rem;
+        padding: 0 1rem;  
+        width: 98%;  
+        background-color: #5dbb5a;
+        opacity: 0.7;
+        border-radius: 20px;
+        box-shadow: 7px 7px 8px #86b484;
+        
+        
+    }
+    .navbarcontainer::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+     
+    
+    .navbar ul {
+        float: right;
+        list-style: none;
+        text-transform: uppercase;   
+        margin: 0;
+        padding: 0;
+    }
+    
+    .navbar ul li {
+        float: left;
+        width: 175px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 500;
+        color: darkblue;
+        background-color: #5dbb5a;
+        /*opacity: 10;*/
+    }
+    .navbar li:hover {
+        background: #238620;
+        /*border-radius: 8px;*/
+        color: white;
+        box-shadow: 10px 10px 5px #558553;
+        /*text-decoration: underline rgb(13, 4, 133);*/
+    }
+    .navbar li a:hover {
+        color: white;
+    }
+
+    .navbar ul li ul li {
+        display: none;
+    }
+    
+    .navbar ul li:hover ul li {
+        display: block;
+        box-shadow: 10px 10px 5px #558553;
+    }
+    
+    
+    
+    
+   
+
+}
+
+
+
+
+
+@media screen and (min-width: 1500px){
+
+
+    main {
+        margin-bottom: 10rem;
+        padding-bottom: 6rem; 
+    }
+    footer {
+        position: absolute;
+        height: 8rem;
+        bottom: -42rem;
+        margin-bottom: 2rem;
+        padding-bottom: 4rem;
+        font-size: medium;       
+    }
+    
+    .moto p {
+        font-size: 2.8rem;
+    }
+    .logo {
+        text-align: left;
+        padding-top: 1rem;
+        padding-left: 3rem;
+    } 
+    .logo img {
+        height: 10rem;
+        border-radius: 50%;
+        box-shadow: 6px 6px 10px grey;
+    }
+    .membership {
+        /*text-align: right;
+        vertical-align: bottom;*/
+        padding: 2rem 3rem 0 0;
+        margin: 0 auto;
+        /*border: 1px dotted tomato;*/
+    }
+    .membership img {
+    
+        height: 8rem;
+        border-radius: 15px;
+        box-shadow: 5px 5px 10px gray; darkblue;
+        
+    }
+    .quicklinks {
+        position: fixed;
+        top: 25rem;
+        left: 6rem;
+        
+    }
+    .flextiles {
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 5rem 4rem 1.5rem 22rem;
+        gap: 7rem;
+        padding-bottom: 5rem;
+        }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/************************
+    link styles
+    ********************/
+
+/* unvisited link */
+.navbar a:link {
+    text-decoration: none;
+    /*color: black;*/
+}
+  
+  /* visited link */
+.navbar a:visited {
+    text-decoration: none;
+    /*color: black;*/        
+}
+
+.navbar a:active {
+    text-decoration: none;
+    
+}
+/* unvisited link */
+.tile a:link {
+    text-decoration: none;
+    color: whitesmoke;
+}
+  
+  /* visited link */
+.tile a:visited {
+    text-decoration: none;
+    color: whitesmoke;        
+}
+
+.tile a:active {
+    color: whitesmoke;
+    
+}
+
+
+/************************
+      Borders
+*************************/
+
+/*
+header,
+main,
+.flextiles,
+.navbar {
+    border: 2px dotted tomato;
+}
+
+.container > * {
+    border: 1px dotted rgb(221, 255, 71);
+}
+
+.logo {
+    text-align: left;
+    padding-top: 1rem;
+    padding-left: 3rem;
+    border: 1px dotted tomato;
+} 
+.moto {
+    border: 1px dotted tomato;
+}
